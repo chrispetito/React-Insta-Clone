@@ -1,5 +1,5 @@
 .insta-logo {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: 30px;
   padding-right: 1%;
 }
@@ -11,11 +11,13 @@
   width: 100%;
   padding: 1.2rem 0;
   padding-left: 25.5%;
+  position: fixed;
+  background-color: white;
 }
 
 .Title {
   color: black;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   margin: 0;
   width: 200px;
   padding-left: 0.8%;
@@ -34,10 +36,11 @@
   background-color: #f8f8f8;
 }
 .icon-box {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   margin-left: 11.6%;
   width: 7%;
   display: flex;
   justify-content: space-between;
+  color: #999999;
 }
 
