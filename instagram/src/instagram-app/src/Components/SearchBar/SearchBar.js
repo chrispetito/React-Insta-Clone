@@ -9,9 +9,9 @@ function SearchBar() {
       <h1 className="Title">Instagram</h1>
       <input className="search-box" placeholder="Search" />
       <div className="icon-box">
-        <i className="far fa-compass" />
-        <i className="far fa-heart" />
-        <i className="far fa-user" />
+        <i id ='nav-compass' className="far fa-compass" />
+        <i id ='nav-heart' className="far fa-heart" />
+        <i id ='nav-user' className="far fa-user" />
       </div>
     </div>
   );

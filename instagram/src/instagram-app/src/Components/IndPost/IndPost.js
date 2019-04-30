@@ -28,8 +28,11 @@ function IndPost(props) {
       <div>
         <p className='likes-number'>{props.post.likes} likes</p>
         <CommentSection className = 'comment-container'comments={props.post.comments} />
+        <div>
+          <p className='timestamp'>2 HOURS AGO</p>
+      </div>
         <CommentInput />
-      
+
       </div>
 
     </div>
