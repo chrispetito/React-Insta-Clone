@@ -6,7 +6,7 @@ function PostContainer(props) {
   return (
     <div className="post-container">
       {props.listProp.map((post, index) => {
-        return <IndPost postProp={props} key={index} post={post} />;
+        return <IndPost postProp={props} key={index} post={post} addLike={props.addLike}/>;
       })}
       <div />
     </div>
