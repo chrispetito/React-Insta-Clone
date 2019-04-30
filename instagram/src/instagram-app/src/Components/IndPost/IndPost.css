@@ -30,13 +30,17 @@
 }
 .comment-actions {
   /* border: 1px solid blue; */
-  margin-left: 1rem;
+  /* margin-left: 1rem; */
   margin-top: 0.8rem;
 }
 #heart-icon-comment {
   /* border: 1px solid blue; */
   font-size: 1.4rem;
   margin-right: 1rem;
+}
+#heart-icon-comment:hover {
+  color: red;
+  cursor: pointer;
 }
 #comment-icon-comment {
   /* border: 1px solid green; */

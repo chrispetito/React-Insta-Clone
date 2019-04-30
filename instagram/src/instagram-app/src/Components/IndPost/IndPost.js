@@ -35,10 +35,9 @@ class IndPost extends React.Component {
           />
         </div>
         <div className="comment-actions">
-          <button onClick={this.addNewLike} className="btn">
-            <i id="heart-icon-comment" className="far fa-heart" />
-          </button>
-          <i id="comment-icon-comment" className="far fa-comment" />
+            <i onClick={this.addNewLike} id="heart-icon-comment" className="far fa-heart" />
+
+          <i  id="comment-icon-comment" className="far fa-comment" />
         </div>
         <div>
           <p className="likes-number">{this.state.likes} likes</p>
