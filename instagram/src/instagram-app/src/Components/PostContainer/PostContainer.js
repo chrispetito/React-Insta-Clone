@@ -8,8 +8,7 @@ function PostContainer(props) {
       {props.listProp.map((post, index) => {
         return <IndPost postProp={props} key={index} post={post} />;
       })}
-      <div>
-      </div>
+      <div />
     </div>
   );
 }

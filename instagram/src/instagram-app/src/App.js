@@ -5,12 +5,11 @@ import SearchBar from "./Components/SearchBar/SearchBar";
 import PostContainer from "./Components/PostContainer/PostContainer";
 // import CommentSection from './Components/CommentSection/CommentSection';
 
-
 class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      posts: dummyData,
+      posts: dummyData
     };
   }
 
@@ -21,7 +20,7 @@ class App extends React.Component {
           <SearchBar />
           <div>
             <div>
-               <PostContainer listProp={this.state.posts} />;
+              <PostContainer listProp={this.state.posts} />;
             </div>
           </div>
         </div>
