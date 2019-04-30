@@ -1,7 +1,6 @@
 import React from "react";
 import "./IndPost.css";
 import CommentSection from "../CommentSection/CommentContainer";
-import CommentInput from "../CommentSection/CommentInput";
 
 function IndPost(props) {
   return (
@@ -31,10 +30,6 @@ function IndPost(props) {
           className="comment-container"
           comments={props.post.comments}
         />
-        <div>
-          <p className="timestamp">2 HOURS AGO</p>
-        </div>
-        <CommentInput />
       </div>
     </div>
   );

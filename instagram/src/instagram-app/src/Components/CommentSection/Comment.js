@@ -10,6 +10,7 @@ function Comment(props) {
       <p className="comment-username">{props.comment.username}</p>
       <p className="comment-comment">{props.comment.text}</p>
     </div>
+    
   );
 }
 
