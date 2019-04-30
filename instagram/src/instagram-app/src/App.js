@@ -9,8 +9,14 @@ class App extends React.Component {
   constructor() {
     super();
     this.state = {
+      posts: []
+    }
+  }
+
+  componentDidMount() {
+    this.setState({
       posts: dummyData
-    };
+    })
   }
 
   render() {
@@ -19,9 +25,7 @@ class App extends React.Component {
         <div className="Header">
           <SearchBar />
           <div>
-            <div>
               <PostContainer listProp={this.state.posts} />;
-            </div>
           </div>
         </div>
       </div>
