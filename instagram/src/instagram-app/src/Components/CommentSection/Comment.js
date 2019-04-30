@@ -6,8 +6,8 @@ function Comment(props) {
 
   return (
     <div className="comment-section">
-      <span>{props.comment.username}</span>
-      <p>{props.comment.text}</p>
+      <p className='comment-username'>{props.comment.username}</p>
+      <p className='comment-comment'>{props.comment.text}</p>
     </div>
   );
 }

@@ -1,5 +1,5 @@
 .individual-post {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     height: 100%;
     margin-top: 1.6rem;
     width: 31.5%;
@@ -7,7 +7,7 @@
 }
 
 .card-title {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: flex;
     height: 3.6rem;
 }
@@ -28,7 +28,7 @@
     width: 100%;
 }
 .comment-actions {
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     margin-left: 1rem;
     margin-top: 0.5rem;
 }
@@ -40,4 +40,10 @@
 #comment-icon-comment {
     /* border: 1px solid green; */
     font-size: 1.4rem;
+}
+.likes-number {
+    margin-left: 1.1rem;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    font-weight: bold;
 }

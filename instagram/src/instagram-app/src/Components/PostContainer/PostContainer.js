@@ -9,9 +9,6 @@ function PostContainer(props) {
         return <IndPost postProp={props} key={index} post={post} />;
       })}
       <div>
-        {/* {props.dummyData.comments.map(post => {
-          return <CommentSection commentProp={props} post={post} />;
-        })} */}
       </div>
     </div>
   );
