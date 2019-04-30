@@ -9,21 +9,32 @@ class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      posts: []
+      posts: [],
+      filteredPosts: []
     }
   }
 
   componentDidMount() {
     this.setState({
-      posts: dummyData
+      posts: dummyData,
     })
   }
+
+  filterResults = (event) => {
+    const newPosts = this.state.posts.filter(post => {
+      if (post.username.includes(event.target.value)) {
+        return post;
+      } 
+    });
+    this.setState({posts: newPosts})
+  }
+
 
   render() {
     return (
       <div className="App">
         <div className="Header">
-          <SearchBar />
+          <SearchBar filter={this.filterResults}/>
           <div>
               <PostContainer listProp={this.state.posts} />;
           </div>

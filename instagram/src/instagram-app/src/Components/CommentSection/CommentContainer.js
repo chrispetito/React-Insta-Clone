@@ -15,14 +15,14 @@ class CommentSection extends React.Component {
   }
 
   addNewComment = event => {
-    console.log("newcomment");
+    // console.log("newcomment");
     this.setState({
       text: event.target.value, username: 'lambdaschool'
     });
   };
 
   handleNewComment = event => {
-    console.log("submit");
+    // console.log("submit");
     event.preventDefault();
     const commentArray = this.state.comments;
     const newComment = { username: this.state.username, text: this.state.text };
