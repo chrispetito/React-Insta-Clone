@@ -1,6 +1,6 @@
 import React from "react";
 import "./IndPost.css";
-import CommentSection from "../CommentSection/CommentSection";
+import CommentSection from "../CommentSection/CommentContainer";
 
 function IndPost(props) {
   return (
@@ -25,9 +25,7 @@ function IndPost(props) {
       <i id='comment-icon-comment'className="far fa-comment"></i>
       </div>
       <div>
-        {props.post.comments.map(comment => {
-            return <CommentSection commentProp={props} />
-        })}
+        <CommentSection comments={props.post.comments} />
       
       </div>
 
