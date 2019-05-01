@@ -8,7 +8,7 @@ class PostsPage extends React.Component {
     super();
     this.state = {
         posts: [],
-        loggedIn: false
+        newPosts: [],
     };
   }
 

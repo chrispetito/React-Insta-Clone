@@ -7,9 +7,10 @@ function Comment(props) {
 
   return (
     <div className="comment-section" key={props.index}>
-      <p className="comment-comment"><strong>  {props.comment.username} </strong>  {props.comment.text}</p>
+      <p className="comment-comment">
+        <strong> {props.comment.username} </strong> {props.comment.text}
+      </p>
     </div>
-    
   );
 }
 

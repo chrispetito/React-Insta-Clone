@@ -10,7 +10,7 @@ class CommentSection extends React.Component {
     this.state = {
       comments: props.comments,
       text: "",
-      username: ""
+      username: "",
     };
   }
 

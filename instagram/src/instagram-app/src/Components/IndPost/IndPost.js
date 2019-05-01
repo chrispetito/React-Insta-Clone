@@ -18,7 +18,7 @@ class IndPost extends React.Component {
 
   render() {
     return (
-      <div className="individual-post" id={this.props.post.imageUrl}>
+      <div className="individual-post" id={this.props.post.index}>
         <div className="card-title">
           <img
             className="thumbnail-photo"
@@ -33,19 +33,23 @@ class IndPost extends React.Component {
             alt="post content"
             className="post-photo"
           />
-        </div>
-        <div className="comment-actions">
-            <i onClick={this.addNewLike} id="heart-icon-comment" className="far fa-heart" />
+          <div className="comment-actions">
+            <i
+              onClick={this.addNewLike}
+              id="heart-icon-comment"
+              className="far fa-heart"
+            />
 
-          <i  id="comment-icon-comment" className="far fa-comment" />
-        </div>
-        <div>
-          <p className="likes-number">{this.state.likes} likes</p>
-          <CommentSection
-            className="comment-container"
-            comments={this.props.post.comments}
-            id={this.props.post.imageUrl}
-          />
+            <i id="comment-icon-comment" className="far fa-comment" />
+          </div>
+          <div>
+            <p className="likes-number">{this.state.likes} likes</p>
+            <CommentSection
+              className="comment-container"
+              comments={this.props.post.comments}
+              id={this.props.post.imageUrl}
+            />
+          </div>
         </div>
       </div>
     );
