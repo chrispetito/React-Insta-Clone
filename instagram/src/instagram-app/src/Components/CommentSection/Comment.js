@@ -6,9 +6,8 @@ function Comment(props) {
   // const comments = {props.commentProp.post.comments}
 
   return (
-    <div className="comment-section">
-      <p className="comment-username">{props.comment.username}</p>
-      <p className="comment-comment">{props.comment.text}</p>
+    <div className="comment-section" key={props.index}>
+      <p className="comment-comment"><strong>  {props.comment.username} </strong>  {props.comment.text}</p>
     </div>
     
   );

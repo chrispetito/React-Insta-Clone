@@ -17,7 +17,7 @@ class CommentSection extends React.Component {
   addNewComment = event => {
     // console.log("newcomment");
     this.setState({
-      text: event.target.value, username: 'lambdaschool'
+      text: event.target.value, username: localStorage.getItem('user')
     });
   };
 

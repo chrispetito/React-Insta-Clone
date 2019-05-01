@@ -18,7 +18,7 @@ class IndPost extends React.Component {
 
   render() {
     return (
-      <div className="individual-post">
+      <div className="individual-post" id={this.props.post.imageUrl}>
         <div className="card-title">
           <img
             className="thumbnail-photo"
@@ -44,6 +44,7 @@ class IndPost extends React.Component {
           <CommentSection
             className="comment-container"
             comments={this.props.post.comments}
+            id={this.props.post.imageUrl}
           />
         </div>
       </div>
