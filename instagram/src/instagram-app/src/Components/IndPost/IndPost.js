@@ -6,15 +6,24 @@ class IndPost extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      likes: props.post.likes
+      likes: props.post.likes,
+      liked: false
     };
   }
-  addNewLike = () => {
+  
+  toggleLike = (prevState) => {
     // console.log("newlike");
-    this.setState({
-      likes: this.state.likes + 1
-    });
-  };
+    if (this.state.liked === true) {
+        this.setState({
+            likes: this.state.likes - 1,
+            liked: false
+        })
+    } else if (this.state.liked === false)
+        this.setState({
+            likes: this.state.likes + 1,
+            liked: true
+        })
+  }
 
   render() {
     return (
@@ -35,7 +44,7 @@ class IndPost extends React.Component {
           />
           <div className="comment-actions">
             <i
-              onClick={this.addNewLike}
+              onClick={this.toggleLike}
               id="heart-icon-comment"
               className="far fa-heart"
             />

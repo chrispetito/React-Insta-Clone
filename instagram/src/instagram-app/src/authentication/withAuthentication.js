@@ -10,6 +10,10 @@ const withAuthenticate = PostsPage => LoginPage =>
       };
     }
 
+    componentDidMount() {
+        
+    }
+
     handleChange = event => {
       this.setState({
         [event.target.name]: event.target.value
@@ -20,7 +24,7 @@ const withAuthenticate = PostsPage => LoginPage =>
       console.log("login event");
       event.preventDefault();
       if (localStorage.getItem("user")) {
-        localStorage.removeItem("user");
+          localStorage.removeItem('user')
         this.setState({
           loggedIn: false
         });
