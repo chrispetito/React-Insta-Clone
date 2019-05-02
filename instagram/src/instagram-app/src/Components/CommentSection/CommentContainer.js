@@ -3,6 +3,7 @@ import "./CommentSection.css";
 import Comment from "./Comment";
 import PropTypes from "prop-types";
 import CommentInput from "./CommentInput";
+import styled from 'styled-components';
 
 class CommentSection extends React.Component {
   constructor(props) {
@@ -40,7 +41,7 @@ class CommentSection extends React.Component {
           return <Comment comment={comment} key={index} />;
         })}
         <div>
-          <p className="timestamp">2 HOURS AGO</p>
+          <Timestamp>2 HOURS AGO</Timestamp>
         </div>
         <CommentInput
           newComment={this.addNewComment}
@@ -62,3 +63,11 @@ CommentSection.propTypes = {
 };
 
 export default CommentSection;
+
+const Timestamp = styled.p`
+    margin-left: 1.1rem;
+    margin-top: 2rem;
+    font-size: 0.8rem;
+    color: #c4c4c4;
+    font-weight: bold;
+  `

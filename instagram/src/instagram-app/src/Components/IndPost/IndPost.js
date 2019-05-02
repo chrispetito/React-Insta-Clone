@@ -101,9 +101,9 @@ const CommentActions = styled.div`
   margin-left: 1rem;
 `;
 const LikesNumber = styled.p`
-margin-left: 1.1rem;
-font-size: 0.9rem;
-margin-top: 1rem;
-font-weight: bold;
-margin-bottom: 0;
-`
+  margin-left: 1.1rem;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+  font-weight: bold;
+  margin-bottom: 0;
+`;
