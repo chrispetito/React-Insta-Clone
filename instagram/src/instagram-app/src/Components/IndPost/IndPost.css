@@ -1,39 +1,39 @@
-.individual-post {
-  /* border: 1px solid red; */
+/* .individual-post {
+  border: 1px solid red;
   height: 100%;
   margin-top: 1.6rem;
   width: 31.5%;
   border-radius: 5px;
   border: 1px solid #c4c4c4;
   min-width: 600px;
-}
+} */
 
-.card-title {
-  /* border: 1px solid red; */
+/* .card-title {
+  border: 1px solid red;
   display: flex;
   height: 3.6rem;
-}
-.thumbnail-photo {
+} */
+/* .thumbnail-photo {
   width: 30px;
   height: 30px;
   border-radius: 20px;
   margin-left: 1.1rem;
   margin-top: 1.1rem;
-}
-.user-name {
+} */
+/* .user-name {
   margin-left: 0.6rem;
   font-size: 0.9rem;
   margin-top: 1.4rem;
   font-weight: bold;
-}
-.post-photo {
+} */
+/* .post-photo {
   width: 100%;
-}
-.comment-actions {
-  /* border: 1px solid blue; */
-  /* margin-left: 1rem; */
+} */
+/* .comment-actions {
+  border: 1px solid blue;
+  margin-left: 1rem;
   margin-top: 0.8rem;
-}
+} */
 #heart-icon-empty {
   /* border: 1px solid blue; */
   font-size: 1.4rem;
@@ -58,13 +58,13 @@
   /* border: 1px solid green; */
   font-size: 1.4rem;
 }
-.likes-number {
+/* .likes-number {
   margin-left: 1.1rem;
   font-size: 0.9rem;
   margin-top: 1rem;
   font-weight: bold;
   margin-bottom: 0;
-}
+} */
 .timestamp {
   margin-left: 1.1rem;
   margin-top: 2rem;
