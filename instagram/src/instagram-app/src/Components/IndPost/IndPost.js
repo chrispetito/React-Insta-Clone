@@ -10,20 +10,20 @@ class IndPost extends React.Component {
       liked: false
     };
   }
-  
-  toggleLike = (prevState) => {
+
+  toggleLike = prevState => {
     // console.log("newlike");
     if (this.state.liked === true) {
-        this.setState({
-            likes: this.state.likes - 1,
-            liked: false
-        })
+      this.setState({
+        likes: this.state.likes - 1,
+        liked: false
+      });
     } else if (this.state.liked === false)
-        this.setState({
-            likes: this.state.likes + 1,
-            liked: true
-        })
-  }
+      this.setState({
+        likes: this.state.likes + 1,
+        liked: true
+      });
+  };
 
   render() {
     return (
@@ -45,8 +45,18 @@ class IndPost extends React.Component {
           <div className="comment-actions">
             <i
               onClick={this.toggleLike}
-              id="heart-icon-comment"
-              className="far fa-heart"
+              //   id="heart-icon-empty"
+              id={
+                this.state.liked === true
+                  ? "heart-icon-filled"
+                  : "heart-icon-empty"
+              }
+              //   className="far fa-heart"
+              className={
+                this.state.liked === true 
+                  ? "fas fa-heart" 
+                  : "far fa-heart"
+              }
             />
 
             <i id="comment-icon-comment" className="far fa-comment" />

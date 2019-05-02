@@ -34,14 +34,25 @@
   /* margin-left: 1rem; */
   margin-top: 0.8rem;
 }
-#heart-icon-comment {
+#heart-icon-empty {
   /* border: 1px solid blue; */
   font-size: 1.4rem;
   margin-right: 1rem;
 }
-#heart-icon-comment:hover {
+#heart-icon-empty:hover {
   color: red;
   cursor: pointer;
+}
+#heart-icon-filled {
+  font-size: 1.4rem;
+  margin-right: 1rem;
+  color: red;
+}
+#heart-icon-filled:hover {
+  font-size: 1.4rem;
+  margin-right: 1rem;
+  cursor: pointer;
+  color: pink;
 }
 #comment-icon-comment {
   /* border: 1px solid green; */
