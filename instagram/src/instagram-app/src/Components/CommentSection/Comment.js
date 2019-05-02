@@ -29,7 +29,7 @@ const CommentSection = styled.div`
   padding-left: 1.1rem;
   padding-right: 1.1rem;
   font-size: 0.9rem;
-  margin: 0.5rem 0;
+  margin: 0.8rem 0;
 `;
 const CommentText = styled.p`
 overflow: visible;

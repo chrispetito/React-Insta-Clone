@@ -25,7 +25,7 @@ class CommentSection extends React.Component {
   handleNewComment = event => {
     // console.log("submit");
     event.preventDefault();
-    const commentArray = this.state.comments;
+    const commentArray = this.props.comments;
     const newComment = { username: this.state.username, text: this.state.text };
     this.state.comments.push(newComment);
     this.setState({
@@ -35,9 +35,10 @@ class CommentSection extends React.Component {
   };
 
   render() {
+      console.log('well looky here', this.state.comments)
     return (
       <div>
-        {this.state.comments.map((comment, index) => {
+        {this.props.comments.map((comment, index) => {
           return <Comment comment={comment} key={index} />;
         })}
         <div>
@@ -66,7 +67,8 @@ export default CommentSection;
 
 const Timestamp = styled.p`
     margin-left: 1.1rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 0.2rem;
     font-size: 0.8rem;
     color: #c4c4c4;
     font-weight: bold;

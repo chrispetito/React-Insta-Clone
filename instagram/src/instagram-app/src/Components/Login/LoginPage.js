@@ -9,7 +9,6 @@ function LoginPage(props) {
       <InstaLogoLogin src={instagram} alt="Instagram Logo" />
       <LoginHeader>Instagram</LoginHeader>
       <LogInBox>
-        {
           <LogInForm>
             <LogInField
               type="text"
@@ -25,7 +24,6 @@ function LoginPage(props) {
             />
             <LogInButton onClick={props.login}>LOG IN</LogInButton>
           </LogInForm>
-        }
       </LogInBox>
     </LogInContainer>
   );
@@ -101,7 +99,7 @@ const LogInButton = styled.button`
   color: white;
   font-weight: bold;
 
-  :hover {
+  &:hover {
     cursor: pointer;
     background: rgba(36, 123, 160, 0.8);
   }

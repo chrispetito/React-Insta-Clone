@@ -10,7 +10,7 @@ function SearchBar(props) {
       <NavHeader>Instagram</NavHeader>
       <NavSearch
         placeholder="Search"
-        onKeyUp={props.filter}
+        onChange={props.filter}
         onKeyDown={props.clear}
       />
       <IconBox>

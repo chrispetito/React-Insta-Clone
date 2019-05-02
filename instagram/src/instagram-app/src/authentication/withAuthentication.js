@@ -10,10 +10,6 @@ const withAuthenticate = PostsPage => LoginPage =>
       };
     }
 
-    componentDidMount() {
-        
-    }
-
     handleChange = event => {
       this.setState({
         [event.target.name]: event.target.value

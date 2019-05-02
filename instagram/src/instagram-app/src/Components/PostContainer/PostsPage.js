@@ -25,10 +25,13 @@ class PostsPage extends React.Component {
         return post;
       } 
     });
+    // console.log(newPosts);
     this.setState({ 
       posts: newPosts 
     });
   };
+
+
 
 
   clearSearch = event => {

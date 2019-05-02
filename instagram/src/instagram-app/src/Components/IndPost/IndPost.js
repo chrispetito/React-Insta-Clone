@@ -13,7 +13,7 @@ class IndPost extends React.Component {
   }
 
   toggleLike = prevState => {
-    // console.log("newlike");
+    console.log("newlike");
     if (this.state.liked === true) {
       this.setState({
         likes: this.state.likes - 1,
@@ -27,6 +27,7 @@ class IndPost extends React.Component {
   };
 
   render() {
+    //   console.log(this.props.post.comments)
     return (
       <IndivPost id={this.props.post.index}>
         <CardTitle>
@@ -105,5 +106,5 @@ const LikesNumber = styled.p`
   font-size: 0.9rem;
   margin-top: 1rem;
   font-weight: bold;
-  margin-bottom: 0;
+  margin-bottom: 0.8rem;
 `;
