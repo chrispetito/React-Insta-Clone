@@ -4,10 +4,10 @@ import PostContainer from './PostContainer';
 import dummyData from "../../dummy-data";
 
 class PostsPage extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
-        posts: [],
+        posts: [], 
         newPosts: [],
     };
   }
@@ -29,6 +29,7 @@ class PostsPage extends React.Component {
       posts: newPosts 
     });
   };
+
 
   clearSearch = event => {
     this.state.posts.filter(post => {
