@@ -25,16 +25,15 @@ Comment.propTypes = {
 export default Comment;
 
 const CommentSection = styled.div`
-  height: 1.4rem;
   display: flex;
   padding-left: 1.1rem;
   padding-right: 1.1rem;
   font-size: 0.9rem;
-  margin-bottom: 0.8rem;
-  padding-top: 0.2rem;
-  margin-top: 0;
+  margin: 0.5rem 0;
 `;
 const CommentText = styled.p`
+overflow: visible;
+margin: 0;
   strong {
     margin-right: 3px;
   }
