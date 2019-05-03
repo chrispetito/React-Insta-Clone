@@ -10,6 +10,21 @@ const withAuthenticate = PostsPage => LoginPage =>
       };
     }
 
+    componentDidMount() {
+        console.log("login event");
+        if (localStorage.getItem("user")) {
+            localStorage.removeItem('user')
+          this.setState({
+            loggedIn: false
+          });
+        } else {
+          localStorage.setItem("user", this.state.username);
+          this.setState({
+            loggedIn: true
+          });
+        }
+    }
+
     handleChange = event => {
       this.setState({
         [event.target.name]: event.target.value
@@ -17,7 +32,7 @@ const withAuthenticate = PostsPage => LoginPage =>
     };
 
     Login = event => {
-      console.log("login event");
+    //   console.log("login event");
       event.preventDefault();
       if (localStorage.getItem("user")) {
           localStorage.removeItem('user')

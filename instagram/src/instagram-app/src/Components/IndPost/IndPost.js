@@ -16,7 +16,7 @@ class IndPost extends React.Component {
     console.log("newlike");
     if (this.state.liked === true) {
       this.setState({
-        likes: this.state.likes - 1,
+        likes: this.props.post.likes,
         liked: false
       });
     } else if (this.state.liked === false)
@@ -27,7 +27,8 @@ class IndPost extends React.Component {
   };
 
   render() {
-    //   console.log(this.props.post.comments)
+      console.log('how do you like them likes:', this.state.likes)
+      console.log(this.props.post.comments)
     return (
       <IndivPost id={this.props.post.index}>
         <CardTitle>

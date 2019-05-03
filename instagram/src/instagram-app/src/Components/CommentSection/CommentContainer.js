@@ -12,6 +12,7 @@ class CommentSection extends React.Component {
       comments: props.comments,
       text: "",
       username: "",
+      likes: props.likes
     };
   }
 
@@ -35,7 +36,9 @@ class CommentSection extends React.Component {
   };
 
   render() {
-      console.log('well looky here', this.state.comments)
+    // console.log('indpost:', this.props.likes)
+
+      console.log('well looky here', this.props.comments)
     return (
       <div>
         {this.props.comments.map((comment, index) => {

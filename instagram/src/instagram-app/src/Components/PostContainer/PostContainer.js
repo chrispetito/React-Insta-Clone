@@ -5,7 +5,7 @@ import styled from 'styled-components';
 
 function PostContainer(props) {
   return (
-    <PostCont className="post-container">
+    <PostCont>
       {props.listProp.map((post, index) => {
         return <IndPost postProp={props} key={index} post={post} addLike={props.addLike}/>
       })}
