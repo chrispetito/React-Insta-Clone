@@ -1,0 +1,62 @@
+/* .insta-logo {
+  border: 1px solid red;
+  width: 30px;
+  padding-right: 1%;
+} */
+
+/* .NavBar {
+  border-bottom: 1px solid #c4c4c4;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 1.2rem 0;
+  padding-left: 25.5%;
+  position: fixed;
+  background-color: white;
+} */
+
+/* .Title {
+  color: black;
+  border: 1px solid red;
+  margin: 0;
+  width: 200px;
+  padding-left: 0.8%;
+  font-family: "Cookie", cursive;
+  font-size: 2rem;
+  border-left: 2px solid black;
+} */
+/* .search-box {
+  border: 1px solid #c4c4c4;
+  margin-left: 4.7%;
+  height: 1.6rem;
+  width: 11%;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  background-color: #f8f8f8;
+  padding-left: 0.4rem;
+  padding-right: 0.4rem;
+} */
+/* .search-box::placeholder {
+  text-align: center;
+  color: #c4c4c4;
+} */
+/* .icon-box {
+  border: 1px solid red;
+  margin-left: 11.6%;
+  width: 7%;
+  display: flex;
+  justify-content: space-between;
+  color: #999999;
+} */
+#nav-compass {
+  font-size: 1.4rem;
+  color: #c4c4c4;
+}
+#nav-heart {
+  font-size: 1.4rem;
+  color: #c4c4c4;
+}
+#nav-user {
+  font-size: 1.4rem;
+  color: #c4c4c4;
+}
